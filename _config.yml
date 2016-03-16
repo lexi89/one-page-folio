@@ -7,8 +7,8 @@ description: Developer | Marketer | Writer | Human
 owner: Alexey Yanovski # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: alexey.yanovski1@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lexi89.github.io/one-page-folio" # the base hostname & protocol for your site
+baseurl: "/one-page-folio" # the subpath of your site, e.g. /blog
+url: "http://lexi89.github.io/" # the base hostname & protocol for your site
 social:
   twitter: https://twitter.com/yanovski2
   github: https://github.com/lexi89
