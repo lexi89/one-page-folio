@@ -2695,3 +2695,7 @@ body.is-mobile.landing #footer {
 .cta-header {
   text-align: right;
   margin-right: 20px; }
+
+@media screen and (max-width: 980px) {
+  .cta-header {
+    text-align: center; } }
