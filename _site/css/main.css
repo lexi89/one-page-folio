@@ -2536,7 +2536,7 @@ body.is-loading #banner:after {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  max-width: 45em; }
+  max-width: 55em; }
   #cta .inner header {
     -moz-order: 1;
     -webkit-order: 1;
@@ -2699,3 +2699,6 @@ body.is-mobile.landing #footer {
 @media screen and (max-width: 980px) {
   .cta-header {
     text-align: center; } }
+.dotted-underline {
+  text-decoration: underline;
+  text-decoration-style: dotted; }
