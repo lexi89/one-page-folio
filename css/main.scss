@@ -858,16 +858,16 @@ $baseurl: '{{ site.url }}/images';
 		}
 
 		&.special {
-			background-color: _palette(accent6, bg);
+			background-color: _palette(accent1, bg);
 			box-shadow: none !important;
-			color: _palette(accent6, fg-bold) !important;
+			color: _palette(accent1, fg-bold) !important;
 
 			&:hover {
-				background-color: lighten(_palette(accent6, bg), 5) !important;
+				background-color: lighten(_palette(accent1, bg), 5) !important;
 			}
 
 			&:active {
-				background-color: darken(_palette(accent6, bg), 5) !important;
+				background-color: darken(_palette(accent1, bg), 5) !important;
 			}
 		}
 
