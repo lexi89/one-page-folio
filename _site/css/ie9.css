@@ -30,7 +30,7 @@
 /* Banner + Wrapper (style4) */
 #banner,
 .wrapper.style4 {
-  background-image: url("/one-page-folio/images/banner.jpg");
+  background-image: url("/images/street.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,7 @@
     content: '';
     height: 100%;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     width: 100%; }
@@ -69,7 +69,7 @@
 
 /* Main */
 #main > header {
-  background-image: url("/one-page-folio/images/banner.jpg");
+  background-image: url("/images/street.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +79,7 @@
     content: '';
     height: 100%;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     width: 100%; }

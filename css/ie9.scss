@@ -7,6 +7,8 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 
+$baseurl: '{{ site.url }}/images';
+
 /*
 	Spectral by HTML5 UP
 	html5up.net | @n33co
@@ -55,7 +57,7 @@
 
 	#banner,
 	.wrapper.style4 {
-		background-image: url("/one-page-folio/images/banner.jpg");
+		background-image: url("#{$baseurl}/street.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -66,7 +68,7 @@
 			content: '';
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.7;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -113,7 +115,7 @@
 
 	#main {
 		> header {
-			background-image: url("/one-page-folio/images/banner.jpg");
+			background-image: url("#{$baseurl}/street.jpg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -124,7 +126,7 @@
 				content: '';
 				height: 100%;
 				left: 0;
-				opacity: 0.5;
+				opacity: 0.7;
 				position: absolute;
 				top: 0;
 				width: 100%;
