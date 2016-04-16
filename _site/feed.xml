@@ -5,9 +5,74 @@
     <description>Developer | Marketer | Writer | Human</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 21:48:16 +0800</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 21:48:16 +0800</lastBuildDate>
+    <pubDate>Sat, 16 Apr 2016 21:58:38 +0200</pubDate>
+    <lastBuildDate>Sat, 16 Apr 2016 21:58:38 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>My first post about ruby</title>
+        <description>&lt;h1 id=&quot;h1&quot;&gt;H1&lt;/h1&gt;
+
+&lt;h2 id=&quot;h2&quot;&gt;H2&lt;/h2&gt;
+
+&lt;h3 id=&quot;h3&quot;&gt;H3&lt;/h3&gt;
+
+&lt;h4 id=&quot;h4&quot;&gt;H4&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a single-line blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This
+is
+a
+multiline
+blockquote
+“Pure water has no fish”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cat&lt;/li&gt;
+  &lt;li&gt;dog&lt;/li&gt;
+  &lt;li&gt;fish&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cat&lt;/li&gt;
+  &lt;li&gt;dog&lt;/li&gt;
+  &lt;li&gt;fish&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;bla bla&lt;/p&gt;
+
+&lt;p&gt;This is a horizonal line:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;super easy to write codeblocks&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bla&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bla&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;all you have to do is indent (don&#39;t forget to leave paragraph space)&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;… and continue the paragraph here&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&amp;quot;&amp;quot;&quot;&gt;Home&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 04 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/webdev/ruby/kramdown-test</link>
+        <guid isPermaLink="true">/webdev/ruby/kramdown-test</guid>
+        
+        
+        <category>ruby</category>
+        
+      </item>
     
   </channel>
 </rss>

@@ -1,0 +1,8 @@
+@media screen and (max-width: 500px) {
+  .page-content, .site-footer{
+    padding: 15px;
+  }
+  p{
+      font-size: $small-font-size;
+  }
+}
