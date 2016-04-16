@@ -17,7 +17,10 @@ social:
   email: mailto:alexey.yanovski1@gmail.com
 
 # Build settings
-# highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 8
+paginate_path: "/webdev/page:num/"
+
 markdown: kramdown
 sass:
  style: compressed
@@ -28,4 +31,4 @@ defaults:
             type: "posts"
         values:
             layout: "post"
-            permalink: /webdev/:categories/:title
+            permalink: /:categories/:title

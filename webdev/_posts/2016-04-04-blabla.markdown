@@ -51,5 +51,4 @@ super easy to write codeblocks
 
 [Home]
 
-
-[Home]: "{{ baseurl }}"
+[Home]: "/"
