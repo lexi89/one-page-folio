@@ -5,9 +5,90 @@
     <description>Developer | Marketer | Writer | Human</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Apr 2016 23:25:01 +0200</pubDate>
-    <lastBuildDate>Sat, 16 Apr 2016 23:25:01 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Apr 2016 22:07:57 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Apr 2016 22:07:57 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Truthy / Falsey For (Ruby) Noobs</title>
+        <description>&lt;p&gt;Ok, this one’s real easy but interesting so lets start at the beginning.&lt;/p&gt;
+
+&lt;p&gt;When you want to check one thing against another, you write a method that replies - &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the most basic level, it looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;more_than_ten?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;more_than_ten?&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;When you use boolean symbols, like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;, &amp;lt;, =&amp;gt;, =&amp;lt;, !, ||, &amp;amp;&amp;amp;,&lt;/code&gt; you are telling ruby you want a &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; value.&lt;/p&gt;
+
+&lt;p&gt;No matter what you use these boolean “operators” on, ruby will try to convert it into &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;. If you ask ruby if an empty string &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt; is true, it will tell you it is.&lt;/p&gt;
+
+&lt;p&gt;This seems strange because an empty string has nothing in it. And in fact, in other languages, the interpreter will tell you it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But when in ruby, we have to accept that it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When one converts a non-boolean piece of data like an array, string, hash, number etc… into a &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; value, we say it’s “truthy” or “falsey”.
+It’s &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; (but not &lt;em&gt;really&lt;/em&gt; true).&lt;/p&gt;
+
+&lt;p&gt;There are interesting ways to use this.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;truthy_or_falsey&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; is truthy&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; is falsey&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;truthy_or_falsey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# true is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# false is falsey&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Object is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 0 is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 1 is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# nil is falsey&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# true is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# false is falsey&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# &quot;&quot; is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# [1, 2, 3] is truthy&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# {} is truthy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;In Ruby, only &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; are falsey, everything else is truthy: &lt;code class=&quot;highlighter-rouge&quot;&gt;[], {}, &quot;&quot;, 0, 1, true, Object, [1,2,3]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This can lead to very cute bits of code like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;logged_in?&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;!!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_user&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Here, &lt;code class=&quot;highlighter-rouge&quot;&gt;!current_user&lt;/code&gt; forces the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;current_user&lt;/code&gt; into a boolean. A bang is the “not” operator, so it will return the opposite of it’s actual value, so we add another bang &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; to change it &lt;em&gt;back&lt;/em&gt; to it’s actual &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; value. If we added another &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt; it would change it &lt;em&gt;back&lt;/em&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; again.&lt;/p&gt;
+
+&lt;p&gt;Clever.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+        <link>/webdev/truthy-falsey</link>
+        <guid isPermaLink="true">/webdev/truthy-falsey</guid>
+        
+        
+        <category>webdev</category>
+        
+      </item>
     
       <item>
         <title>My second post about ruby</title>
