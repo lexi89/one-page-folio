@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+p, blockquote, pre,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
@@ -119,7 +119,7 @@ blockquote {
         padding-left: $spacing-unit / 2;
         font-size: 18px;
         letter-spacing: -1px;
-        font-style: italic; 
+        font-style: italic;
     }
 
     > :last-child {

@@ -29,8 +29,39 @@ Bootstrap template?
 
 ***
 
-# #1 —
+# #1 — Twitter API practice
+
+### Le Plan
+
+Connect to API with the [Twitter Gem](https://github.com/sferik/twitter)
+
+Find interesting tweets and write down the code snippets next to the results.
+
+Ideas:
+
+- The last 3 tweets about Trump.
+- Funniest joke of the day (most retweeted / favourited?)
+- Quote of the day (most retweeted / favourited?)
+- Top 3 news stories in the UK
+- Most retweeted thing in the whole of Twitter?
+
+Style with Bootstrap & jQuery
+
+Extras: Try using [livereload](https://github.com/guard/guard-livereload) to improve workflow
+
+### Learnings & docs
+
+***
+
+# #2 — News media headline analyzer
 
 _Plan_
+Scrape x number of new sites for headlines with Mechanize / Nokogiri
+
+Save to database a sentiment and a sentiment score from the sentimental gem for each headline.
+
+Display how positive / negative each media outlet is.
+
+Optional: heatmap of negative / positive by score.
 
 _Learnings & docs_
