@@ -47,7 +47,7 @@ Ideas:
 
 Style with Bootstrap & jQuery
 
-Extras: Try using [livereload](https://github.com/guard/guard-livereload) to improve workflow
+Extras: Try using [livereload](https://github.com/guard/guard-livereload) to improve workflowd
 
 ### Learnings & docs
 
