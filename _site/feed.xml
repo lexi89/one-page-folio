@@ -5,23 +5,15 @@
     <description>Developer | Marketer | Writer | Human</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 May 2016 20:12:14 +0100</pubDate>
-    <lastBuildDate>Thu, 12 May 2016 20:12:14 +0100</lastBuildDate>
+    <pubDate>Tue, 24 May 2016 20:27:37 +0100</pubDate>
+    <lastBuildDate>Tue, 24 May 2016 20:27:37 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>The &quot;2 Rails Apps / Week&quot; Journal</title>
-        <description>&lt;p&gt;This page documents my progress towards Ruby on Rails mastery.&lt;/p&gt;
+        <title>Ruby mini-apps</title>
+        <description>&lt;p&gt;This page will document my progress towards Ruby on Rails mastery.&lt;/p&gt;
 
 &lt;p&gt;The purpose of this is to expose myself to as much Rails code as possible, practice research &amp;amp; planning, and documenting. As a by-product, I will create a portfolio of live mini-apps, be able to see how far I’ve come, and expose the bullshit monkey-mind insecurities that come up in the process.&lt;/p&gt;
-
-&lt;p&gt;The format of the exercise is this:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Day 1&lt;/em&gt;: Decide on a feature to explore. Document the plan and research.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Day 2&lt;/em&gt;: Build and deploy the demo app to Heroku.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Day 3&lt;/em&gt;: Document reflections and add demo-app to potfolio listing.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -40,9 +32,9 @@ Bootstrap template?&lt;/p&gt;
 
 &lt;h1 id=&quot;twitter-api-practice&quot;&gt;#1 — Twitter API practice&lt;/h1&gt;
 
-&lt;h3 id=&quot;le-plan&quot;&gt;Le Plan&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lexi89/sandbox/tree/master/twitter_gem&quot;&gt;Github link&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Connect to API with the &lt;a href=&quot;https://github.com/sferik/twitter&quot;&gt;Twitter Gem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Goal: Connect to API with the &lt;a href=&quot;https://github.com/sferik/twitter&quot;&gt;Twitter Gem&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Find interesting tweets and write down the code snippets next to the results.&lt;/p&gt;
 
@@ -58,24 +50,17 @@ Bootstrap template?&lt;/p&gt;
 
 &lt;p&gt;Style with Bootstrap &amp;amp; jQuery&lt;/p&gt;
 
-&lt;p&gt;Extras: Try using &lt;a href=&quot;https://github.com/guard/guard-livereload&quot;&gt;livereload&lt;/a&gt; to improve workflowd&lt;/p&gt;
-
-&lt;h3 id=&quot;learnings--docs&quot;&gt;Learnings &amp;amp; docs&lt;/h3&gt;
+&lt;p&gt;Extras: Try using &lt;a href=&quot;https://github.com/guard/guard-livereload&quot;&gt;livereload&lt;/a&gt; to improve workflow&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;news-media-headline-analyzer&quot;&gt;#2 — News media headline analyzer&lt;/h1&gt;
+&lt;h1 id=&quot;admin-cms-for-a-blog&quot;&gt;#2 — Admin CMS for a blog&lt;/h1&gt;
 
-&lt;p&gt;&lt;em&gt;Plan&lt;/em&gt;
-Scrape x number of new sites for headlines with Mechanize / Nokogiri&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lexi89/sandbox/tree/master/Rails/blog_with_admin&quot;&gt;Github link&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Save to database a sentiment and a sentiment score from the sentimental gem for each headline.&lt;/p&gt;
+&lt;p&gt;Goal: Simple CRUD blog to test out the &lt;a href=&quot;https://github.com/sferik/rails_admin&quot;&gt;rails_admin gem&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Display how positive / negative each media outlet is.&lt;/p&gt;
-
-&lt;p&gt;Optional: heatmap of negative / positive by score.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Learnings &amp;amp; docs&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What I liked: Lots of functionality out of the box. Good starting point for simple projects that need a basic CMS&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 May 2016 00:00:00 +0100</pubDate>
         <link>/webdev/ruby-practice-apps</link>
