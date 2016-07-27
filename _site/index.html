@@ -141,21 +141,28 @@
 					<h2>Let's work together.<br>What are you making?</h2>
 				</div>
 			<!-- </header> -->
-			<form method="post" action="//formspree.io/alexey.yanovski1@gmail.com">
+			<form method="POST" action="//formspree.io/alexey.yanovski1@gmail.com">
+
 				<div class="row uniform">
 					<div class="6u 12u$(xsmall)">
+
 						<input type="text" name="name" value="" placeholder="Name" />
+
 					</div>
+
 					<div class="6u$ 12u$(xsmall)">
-						<input type="email" name="email" value="" placeholder="Your email" />
+						<input type="email" name="_replyto" value="" placeholder="Your email" />
 					</div>
+
 					<div class="12u$">
 						<textarea name="message" placeholder="Enter your message" rows="6"></textarea>
 					</div>
+
 				</div>
+
 				<div class="6u$ 12u$(small) top20">
-					<input type="submit" value="Send Message" class="special" />
-					<input type="hidden" name="_next" value="//site.io/thanks.html" />
+					<input type="submit" value="Send" class="special" />
+					<input type="text" name="_gotcha" style="display:none" />
 				</div>
 			</form>
 
