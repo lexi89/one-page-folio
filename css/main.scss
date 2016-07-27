@@ -1650,7 +1650,7 @@ $baseurl: '{{ site.url }}/images';
 
 			@include breakpoint(medium) {
 				display: block;
-				text-align: center;
+				text-align: left;
 
 				header {
 					padding-right: 0;
